@@ -22,6 +22,9 @@ This project is licensed under the [CC BY-NC 4.0 License](https://creativecommon
 | 2025-04-17 | 洛谷 | [P1439 【模板】最长公共子序列](https://www.luogu.com.cn/problem/P1439) | 普及+/提高 | [🔗解析(MLE，io太慢了)](./Luogu/src/P1439.java)                                    | 二分，dp         | 🌟🌟🌟
 | 2025-04-18 | LeetCode | [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/description/?envType=daily-question&envId=2025-04-18) | 中等     | [🔗数组](./Leetcode/src/lc2346.java)                                           | 数组            | 🌟🌟🌟🌟
 | 2025-04-18 | LeetCode | [1512. 好数对的数目](https://leetcode.cn/problems/number-of-good-pairs/description/) | 简单     | [🔗数组](./Leetcode/src/lc1512.java)                                           | ️数组(上一题的前置知识) | 🌟🌟🌟🌟
+| 2025-04-19 | LeetCode | [2563. 统计公平数对的数目](https://leetcode.cn/problems/count-the-number-of-fair-pairs/description/?envType=daily-question&envId=2025-04-19) | 中等     | [🔗数组](./Leetcode/src/lc2563.java)                                           | ️数组，二分        | 🌟🌟🌟🌟  
+| 2025-04-19 | 洛谷 | [P1216 [IOI 1994] 数字三角形 Number Triangles](https://www.luogu.com.cn/problem/P1216) | 普及-    | [🔗解析(MLE，io太慢了，不用快读真让人头疼🤕)](./Luogu/src/P1216.java)                        | 二分，dp         | 🌟🌟🌟
+| 2025-04-19 | 洛谷 | [P1440 求m区间内的最小值](https://www.luogu.com.cn/problem/P1440) | 普及/提高- | [🔗解析(MLE，io太慢了，不用快读真让人头疼🤕)](./Luogu/src/P1440.java)                        | 二分，dp         | 🌟🌟🌟
 
 
 
