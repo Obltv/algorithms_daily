@@ -83,8 +83,13 @@ This project is licensed under the [CC BY-NC 4.0 License](https://creativecommon
 | 2025-05-05 | LeetCode | [700. 在二叉搜索树中搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/description/)                                                                             | 简单     | [🔗二叉树，递归](./Leetcode/src/lc700.java)                                                                                                                            | ️二叉树，递归        | 🌟🌟🌟       |
 | 2025-05-05 | LeetCode | [790. 多米诺骨牌和特罗米诺骨牌拼贴](https://leetcode.cn/problems/domino-and-tromino-tiling/description/)                                                                             | 中等     | [🔗递推](./Leetcode/src/lc790.java)                                                                                                                                | ️递推            | 🌟🌟🌟       |
 | 2025-05-06 | LeetCode | [450. 删除二叉搜索树中的节点](https://leetcode.cn/problems/delete-node-in-a-bst/description/)                                                                                     | 中等     | [🔗二叉树，递归](./Leetcode/src/lc450.java)                                                                                                                            | ️二叉树，递归        | 🌟🌟🌟       |
-| 2025-05-06 | LeetCode | [1920. 根据排列构建数组](https://leetcode.cn/problems/build-array-from-permutation/description/?envType=daily-question&envId=2025-05-06)                                                                              | 简单     | [🔗数组](./Leetcode/src/lc1920.java)                                                                                                                               | ️数组            | 🌟       |
+| 2025-05-06 | LeetCode | [1920. 根据排列构建数组](https://leetcode.cn/problems/build-array-from-permutation/description/?envType=daily-question&envId=2025-05-06)                                                                             | 简单     | [🔗数组](./Leetcode/src/lc1920.java)                                                                                                                               | ️数组            | 🌟       |
 | 2025-05-06 | LeetCode | [96. 唯一二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/description/)                                                                                      | 中等     | [🔗二叉树，递归](./Leetcode/src/lc96.java)                                                                                                                             | ️二叉树，递归        | 🌟🌟🌟       |
+| 2025-05-07 | LeetCode | [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/description/)                                                                                      | 中等     | [🔗dijkstra,图](./Leetcode/src/lc743.java)                                                                                                                        | ️dijkstra,图       | 🌟🌟🌟🌟      |
+| 2025-05-07 | LeetCode | [3341. 计算到达最后一个房间的最短时间 I](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/description/?envType=daily-question&envId=2025-05-07)                                                                                     | 中等     | [🔗dijkstra,图](./Leetcode/src/lc3341.java)                                                                                                                       | ️dijkstra,图       | 🌟🌟🌟🌟      |
+| 2025-05-07 | LeetCode | [1631. 最小努力路径](https://leetcode.cn/problems/path-with-minimum-effort/description/)                                                                                      | 中等     | [🔗dijkstra,图](./Leetcode/src/lc1631.java)                                                                                                                       | ️dijkstra,图       | 🌟🌟🌟🌟      |
+
+
 
 
 
@@ -154,15 +159,17 @@ public static void main(String[] args) {
 
 ## Java基础
 
-| 日期         | 分类   | 问题与解答                                                  | 推荐指数       |
-|------------|------|--------------------------------------------------------|------------|
-| 2025-04-24 | 数据类型 | [Java中的8种数据类型，所占的字节大小，对应的封装类型](./JavaSE/src/j1.md)     | 🌟🌟🌟🌟   |
-| 2025-04-25 | 数据类型 | [Java 包装类型常量池与 `equals` 比较](./JavaSE/src/j2.md)        | 🌟🌟🌟🌟🌟 |
-| 2025-04-26 | 数据类型 | [为什么要有包装类](./JavaSE/src/j3.md)                         | 🌟🌟🌟🌟🌟 |
-| 2025-04-27 | 数据类型 | [什么是自动拆箱装箱，原理](./JavaSE/src/j4.md)                     | 🌟🌟🌟🌟🌟 |
-| 2025-04-28 | 数据类型 | [自动拆箱引发的NPE问题](./JavaSE/src/j5.md)                     | 🌟🌟🌟🌟🌟 |
-| 2025-04-29 | 面向对象 | [自动拆箱引发的NPE问题](./JavaSE/src/j6.md)                     | 🌟🌟🌟🌟🌟 |
-| 2025-04-30 | 面向对象 | [Java 中的重载（Overload）与重写（Override）](./JavaSE/src/j7.md) | 🌟🌟🌟🌟🌟 |
+| 日期         | 分类   | 问题与解答                                                              | 推荐指数       |
+|------------|------|--------------------------------------------------------------------|------------|
+| 2025-04-24 | 数据类型 | [Java中的8种数据类型，所占的字节大小，对应的封装类型](./JavaSE/src/j1.md)                 | 🌟🌟🌟🌟   |
+| 2025-04-25 | 数据类型 | [Java 包装类型常量池与 `equals` 比较](./JavaSE/src/j2.md)                    | 🌟🌟🌟🌟🌟 |
+| 2025-04-26 | 数据类型 | [为什么要有包装类](./JavaSE/src/j3.md)                                     | 🌟🌟🌟🌟🌟 |
+| 2025-04-27 | 数据类型 | [什么是自动拆箱装箱，原理](./JavaSE/src/j4.md)                                 | 🌟🌟🌟🌟🌟 |
+| 2025-04-28 | 数据类型 | [自动拆箱引发的NPE问题](./JavaSE/src/j5.md)                                 | 🌟🌟🌟🌟🌟 |
+| 2025-04-29 | 面向对象 | [Java 中的 String、StringBuilder、StringBuffer 区别](./JavaSE/src/j6.md) | 🌟🌟🌟🌟🌟 |
+| 2025-04-30 | 面向对象 | [Java 中的重载（Overload）与重写（Override）](./JavaSE/src/j7.md)             | 🌟🌟🌟🌟🌟 |
+| 2025-04-30 | 面向对象 | [Java 中 `==` 和 `equals()` 的区别](./JavaSE/src/j8.md)                 | 🌟🌟🌟🌟🌟 |
+
 
 
 
