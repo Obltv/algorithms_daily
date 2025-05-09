@@ -38,5 +38,4 @@ public class lc230 {
 
         return -1;
     }
-
 }

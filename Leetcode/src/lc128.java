@@ -9,19 +9,15 @@ public class lc128 {
         for (int num : nums) {
             hs.add(num);
         }
-
         for (int x : hs) {
             if (hs.contains(x - 1)) {
                 continue;
             }
-
             int y = x + 1;
             while (hs.contains(y)) {
                 y++;
             }
-
             res = Math.max(res, y - x);
-
         }
         return res;
     }
