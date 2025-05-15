@@ -26,5 +26,6 @@
 | 2025-05-12 | LeetCode         | [2094. 寻找三位数偶数](https://leetcode.cn/problems/finding-3-digit-even-numbers/description/?envType=daily-question&envId=2025-05-12)                                 | 简单 | [🔗暴力](./Leetcode/src/lc2094.java)         | ️暴力         | 🌟🌟🌟     |
 | 2025-05-12 | LeetCode449周赛补题  | [3548. 等和网格划分 II](https://leetcode.cn/problems/equal-sum-grid-partition-ii/description/)                                                                        | 困难 | [🔗数组，前缀](./Leetcode/src/lc3548.java)      | ️数组         | 🌟🌟🌟     |
 | 2025-05-12 | LeetCode         | [886. 可能的二分](https://leetcode.cn/problems/possible-bipartition/description/)                                                                                    | 中等 | [🔗二分图](./Leetcode/src/lc886.java)         | ️二分图        | 🌟🌟🌟🌟   |
+| 2025-05-12 | LeetCode         | [3335. 转换后的字符串总字符数 I](https://leetcode.cn/problems/total-characters-in-string-after-transformations-i/description/?envType=daily-question&envId=2025-05-14)     | 中等 | [🔗dp](./Leetcode/src/lc3335.java)         | ️dp         | 🌟🌟🌟     |
 
 
