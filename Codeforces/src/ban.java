@@ -10,7 +10,7 @@ public class ban {
      * 2. 判断某个数是否为质数
      * 3. 获取某个数的最小质因子（Smallest Prime Factor, SPF）
      */
-    public class LinearSieve {
+    class LinearSieve {
         private final boolean[] isPrime; // isPrime[i] = true 表示 i 是质数
         private final int[] spf;        // spf[i] 存储 i 的最小质因子
         private final List<Integer> primes; // 存储所有质数
@@ -83,6 +83,49 @@ public class ban {
             return spf[x];
         }
     }
+
+    class UF {
+        private int count;
+        private int[] parent;
+
+        public UF(int n) {
+            count = n;
+            parent = new int[n];
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+            }
+        }
+
+        public void union(int p, int q) {
+            int rootP = find(p);
+            int rootQ = find(q);
+
+            if (rootP == rootQ) return;
+            parent[rootP] = rootQ;
+            count--;
+        }
+
+        public int find(int p) {
+            while (parent[p] != p) {
+                parent[p] = find(parent[p]);
+                p = parent[p];
+            }
+            return parent[p];
+        }
+
+        public boolean connected(int p, int q) {
+            int rootP = find(p);
+            int rootQ = find(q);
+            return rootP == rootQ;
+        }
+
+        public int count() {
+            return count;
+        }
+
+    }
+
+
 
 
 }
