@@ -1,46 +1,34 @@
-# Nacos 单机部署指南（云服务器环境）
+# Nacos 单机模式部署指南
 
-## 1. 准备部署目录
+## 1. 在 `/home` 目录下创建 nacos-docker 目录
 
 ```bash
 mkdir -p /home/nacos/nacos-docker
 cd /home/nacos/nacos-docker
 ```
 
----
+## 2. 放行防火墙端口
 
-## 2. 云服务器开放端口
+> ⚠️ 注意：如果你使用的是云服务器（如阿里云、腾讯云），请前往控制台开放端口。无需使用命令行。
 
-> 注意：在云服务器中，**不要使用 `firewall-cmd` 命令**，应登录云服务器控制台配置端口规则。
-
-### 必须开放的端口：
-
-| 端口 | 用途              |
-|------|-------------------|
-| 8848 | Nacos 主服务端口 |
-| 9848 | Nacos gRPC 端口  |
-
-### 开放方法：
-
-1. 登录云服务商控制台（如阿里云、腾讯云、华为云）
-2. 找到实例 -> 安全组配置 -> 入方向规则
-3. 添加以下规则：
-
-- 协议：TCP
-- 端口范围：8848、9848
-- 授权对象：0.0.0.0/0（或指定 IP）
-
----
-
-## 3. 编写 Docker Compose 配置文件
-
-在 `/home/nacos/nacos-docker` 目录下创建文件：
+本地服务器端口开放命令：
 
 ```bash
-nano standalone-derby.yaml
+firewall-cmd --add-port=8848/tcp --add-port=9848/tcp --permanent
+firewall-cmd --reload
 ```
 
-粘贴以下内容：
+## 3. 启动单机模式服务
+
+服务编排配置参考链接：  
+https://github.com/nacos-group/nacos-docker/blob/master/example/standalone-derby.yaml
+
+在 `nacos-docker` 目录下新建 `standalone-derby.yaml` 文件，
+```
+vim standalone-derby.yaml
+```
+
+写入以下内容：
 
 ```yaml
 version: "2"
@@ -64,45 +52,68 @@ services:
       - "9848:9848"
 ```
 
----
-
-## 4. 启动服务
-
-前台启动：
+## 4. 前台启动服务
 
 ```bash
 docker-compose -f standalone-derby.yaml up
 ```
+## 5. 切换为后台启动服务
 
-后台启动：
+当前台启动无误后，按 `Ctrl + C` 退出前台启动。然后使用下面的命令后台启动：
 
 ```bash
 docker-compose -f standalone-derby.yaml up -d
 ```
 
----
+## 6. 查看启动日志
 
-## 5. 访问 Nacos 控制台
+确认服务启动情况：
 
-浏览器中访问：
-
-```
-http://<你的云服务器公网IP>:8848/nacos
+```bash
+docker logs nacos-standalone
 ```
 
-默认账号密码：
+如果你看到类似如下日志，说明启动成功：
 
-- 用户名：`nacos`
-- 密码：`nacos`
+```
+Nacos started successfully in standalone mode.
+```
 
 ---
 
-## 🔧 常见问题排查
+## 7. 常见问题解决
 
-- 无法访问页面：
-    - 检查云服务器端口是否开放
-    - 使用 `docker ps` 确认容器是否正常运行
-    - 宿主机防火墙是否限制（如你也配置了 firewalld）
+### 问题 1：云服务器部署的 Nacos 无法访问
+
+请参考官方说明文档：  
+👉 [2.0.0 兼容性升级指南](https://nacos.io/zh-cn/docs/v2/upgrading/2.0.0-compatibility.html)
+
+---
+
+### 问题 2：Nacos 服务重启后数据丢失
+
+这通常是因为你使用了如下命令重启服务：
+
+```bash
+docker-compose -f standalone-derby.yaml up -d
+```
+
+`up` 命令默认会重新创建容器，从而导致数据丢失。
+
+#### 正确方式（重启 Nacos 服务）：
+
+```bash
+docker-compose -f standalone-derby.yaml start
+```
+
+或者将数据持久化到数据库中（这里不做说明，建议参考官方文档与编排模板进行配置）。
+
+---
+
+📝 **TIP：**
+- 如果你使用的是生产环境，强烈建议配置数据库持久化；
+- 使用 `start` 而不是 `up`，避免不必要的容器重建。
+
 
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)

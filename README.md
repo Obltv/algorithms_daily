@@ -162,8 +162,8 @@ public static void main(String[] args) {
 |------------|--------|------------------------------------------------------------------------------|
 | 2025-05-16 | Docker | [在龙蜥（OpenAnolis）系统上配置 Docker](./daily/src/docker.md)                         |
 | 2025-05-16 | Docker | [在龙蜥（OpenAnolis）系统中使用 Docker 安装配置 MySQL 8.0.20](./daily/src/Docker_MySQL.md) |
-
-
+| 2025-05-18 | Docker | [Redis Docker 安装与连接指南](./daily/src/Docker_Redis.md)                          |
+| 2025-05-18 | Docker | [Nacos 单机模式部署指南](./daily/src/Docker_Nacos.md)                                |
 
 ## 一些日常的问题
 
