@@ -148,14 +148,20 @@ public class lc0518Q3 {
 //    }
 
     List<int[]>[] list = new List[26];
+    boolean[] visited = new boolean[26];
+    int[][] d = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
     public int minMoves(String[] matrix) {
-        //初始化list
-        Arrays.fill(list, new ArrayList<>());
+        for (int i = 0; i < 26; i++) {
+            list[i] = new ArrayList<>();
+        }
         //转为二维组
         int m = matrix.length;
         int n = matrix[0].length();
         char[][] grid = new char[m][n];
+        if (matrix[m - 1].charAt(n - 1) == '#') {
+            return -1;
+        }
         for (int i = 0; i < m; i++) {
             String s = matrix[i];
             for (int j = 0; j < n; j++) {
@@ -176,10 +182,38 @@ public class lc0518Q3 {
         Deque<int[]> q = new ArrayDeque<>();
         q.offer(new int[]{0, 0});
         while (!q.isEmpty()) {
-            int[] curr = q.poll();
+            int[] curr = q.pollFirst();
             int x = curr[0];
             int y = curr[1];
-
+            if (x == m - 1 && y == n - 1) {
+                return dist[m - 1][n - 1];
+            }
+            char c = matrix[x].charAt(y);
+            if (c != '.') {
+                // 使用所有传送门
+                for (int[] next : list[c - 'A']) {
+                    int newX = next[0], newY = next[1];
+                    if (dist[newX][newY] > dist[x][y]) {
+                        dist[newX][newY] = dist[x][y];
+                        q.offerFirst(new int[]{newX, newY});
+                    }
+                }
+                list[c - 'A'].clear(); // 避免重复使用传送门
+            }
+            for (int i = 0; i < 4; i++) {
+                int newX = x + d[i][0];
+                int newY = y + d[i][1];
+                if (newX < 0 || newX >= m || newY < 0 || newY >= n || grid[newX][newY] == '#') {
+                    continue;
+                } else {
+                    if (dist[newX][newY] > dist[x][y] + 1) {
+                        dist[newX][newY] = dist[x][y] + 1;
+                        q.offerLast(new int[]{newX, newY});
+                    }
+                }
+            }
         }
+
+        return -1;
     }
 }

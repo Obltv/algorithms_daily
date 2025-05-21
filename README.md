@@ -1,4 +1,4 @@
-[![LeetCode](https://img.shields.io/badge/LeetCode-brightgreen?style=flat)](https://leetcode.cn/u/kXM0391JWd/)   ![Java](https://img.shields.io/badge/Java-pink?style=flat)
+[![LeetCode](https://img.shields.io/badge/LeetCode-brightgreen?style=flat)](https://leetcode.cn/u/obltv/)   ![Java](https://img.shields.io/badge/Java-pink?style=flat)
 
 ## License
 
