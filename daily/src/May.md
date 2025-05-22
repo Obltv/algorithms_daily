@@ -35,7 +35,9 @@
 | 2025-05-19 | LeetCode第 450 场周赛补题 | [3551. 按数字总和排序的最小掉期数](https://leetcode.cn/problems/minimum-swaps-to-sort-by-digit-sum/description/)                                                             | 中等 | [🔗并查集](./Leetcode/src/lc0518Q2.java)      | ️并查集        | 🌟🌟🌟     |
 | 2025-05-19 | LeetCode第 450 场周赛补题 | [3552. 网格传送遍历](https://leetcode.cn/problems/grid-teleportation-traversal/description/)                                                                          | 中等 | [🔗0-1bfs](./Leetcode/src/lc0518Q3.java)   | ️0-1bfs     | 🌟🌟🌟     |
 | 2025-05-20 | LeetCode            | [3355. 零数组变换 I](https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20)                                  | 中等 | [🔗差分](./Leetcode/src/lc3355.java)         | ️差分         | 🌟🌟🌟     |
-| 2025-05-20 | LeetCode            | [3356. 零数组变换 II](https://leetcode.cn/problems/zero-array-transformation-ii/description/?envType=daily-question&envId=2025-05-21)                                  | 中等 | [🔗差分+二分](./Leetcode/src/lc3356.java)      | ️差分         | 🌟🌟🌟     |
+| 2025-05-21 | LeetCode            | [3356. 零数组变换 II](https://leetcode.cn/problems/zero-array-transformation-ii/description/?envType=daily-question&envId=2025-05-21)                                  | 中等 | [🔗差分+二分](./Leetcode/src/lc3356.java)      | ️差分         | 🌟🌟🌟     |
+| 2025-05-22 | LeetCode            | [3362. 零数组变换 III](https://leetcode.cn/problems/zero-array-transformation-iii/description/?envType=daily-question&envId=2025-05-22)                                  | 中等 | [🔗差分](./Leetcode/src/lc3362.java)         | ️差分         | 🌟🌟🌟     |
+
 
 
 
