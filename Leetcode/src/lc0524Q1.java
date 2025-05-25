@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.*;
+import java.util.TreeSet;
+import java.util.stream.Stream;
+
 
 public class lc0524Q1 {
 
@@ -112,36 +116,68 @@ public class lc0524Q1 {
 //        }
 //    }
 
-    public long sumOfLargestPrimes(String s) {
+    // public long sumOfLargestPrimes(String s) {
 
-        HashSet<Long> list = new HashSet<>();
-        for (int i = 1; i <= s.length(); i++) {
-            for (int j = 0; j + i <= s.length(); j++) {
-                String str = s.substring(j, j + i);
-                long a = Long.parseLong(str);
-                if (isP(a)) {
-                    list.add(a);
+    //     HashSet<Long> list = new HashSet<>();
+    //     for (int i = 1; i <= s.length(); i++) {
+    //         for (int j = 0; j + i <= s.length(); j++) {
+    //             String str = s.substring(j, j + i);
+    //             long a = Long.parseLong(str);
+    //             if (isP(a)) {
+    //                 list.add(a);
+    //             }
+    //         }
+    //     }
+
+    //     Long[] arr = list.toArray(new Long[0]);
+    //     Arrays.sort(arr);
+
+    //     long res = 0;
+    //     for (int i = arr.length - 1; i >= Math.max(0, arr.length - 3); i--) {
+    //         res += arr[i];
+    //     }
+
+    //     return res;
+
+    // }
+
+    // boolean isP(long num) {
+    //     if (num < 2) return false;
+    //     if (num == 2) return true;
+    //     if (num % 2 == 0) return false;
+    //     for (int i = 3; i * i <= num; i += 2) {
+    //         if (num % i == 0) return false;
+    //     }
+    //     return true;
+    // }
+
+    public long sumOfLargestPrimes(String s) {
+        int n = s.length();
+
+        TreeSet<Long> set = new TreeSet<>();
+
+        for (int i = 0; i < n; i++) {
+            long l = 0;
+            for (int j = i; j < n; j++) {
+                l = l * 10 + (s.charAt(j) - '0');
+                if (isPrime(l)) {
+                    set.add(l);
                 }
             }
         }
 
-        Long[] arr = list.toArray(new Long[0]);
-        Arrays.sort(arr);
-
-        long res = 0;
-        for (int i = arr.length - 1; i >= Math.max(0, arr.length - 3); i--) {
-            res += arr[i];
-        }
-
-        return res;
-
+        return set.descendingSet()
+                .stream()
+                .limit(3)
+                .mapToLong(Long::longValue)
+                .sum();
     }
 
-    boolean isP(long num) {
+    boolean isPrime(long num) {
         if (num < 2) return false;
         if (num == 2) return true;
-        if (num % 2 == 0) return false;
-        for (int i = 3; i * i <= num; i += 2) {
+        if(num % 2 == 0) return false;
+        for (long i = 3; i * i < num; i++) {
             if (num % i == 0) return false;
         }
         return true;
