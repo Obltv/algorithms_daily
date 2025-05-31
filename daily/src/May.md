@@ -51,6 +51,8 @@
 | 2025-05-29 | LeetCode            | [3373. 最大化连接树后的目标节点数 II](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/description/?envType=daily-question&envId=2025-05-29) | 困难 | [🔗dfs(不出意外的超时，就最后几个测试用例卡我😭)](../../Leetcode/src/lc3373.java) | ️dfs            | 🌟🌟🌟     |
 | 2025-05-30 | LeetCode            | [2359. 查找距离给定两个节点最近的节点](https://leetcode.cn/problems/find-closest-node-to-given-two-nodes/description/?envType=daily-question&envId=2025-05-30)                           | 中等 | [🔗内向基环树](../../Leetcode/src/lc2359.java)                      | ️ 内向基环树         | 🌟🌟🌟     |
 | 2025-05-30 | LeetCode            | [1584. 连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/description/)                                                                              | 中等 | [🔗 Kruskal(并查集）](../../Leetcode/src/lc1584.java)              | ️  Kruskal(并查集） | 🌟🌟🌟     |
+| 2025-05-30 | LeetCode            | [909. 蛇梯棋](https://leetcode.cn/problems/snakes-and-ladders/description/?envType=daily-question&envId=2025-05-31)                                                          | 中等 | [🔗 bfs](../../Leetcode/src/lc909.java)                        | ️ bfs           | 🌟🌟🌟     |
+
 
 
 
