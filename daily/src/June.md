@@ -13,6 +13,7 @@
 | 2025-06-05 | LeetCode          | [1061. 按字典序排列最小的等效字符串](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/description/?envType=daily-question&envId=2025-06-05)                   | 中等 | [并查集](../../Leetcode/src/lc1061.java)     | ️并查集 | 🌟🌟     |
 | 2025-06-06 | LeetCode          | [2434. 使用机器人打印字典序最小的字符串](https://leetcode.cn/problems/using-a-robot-to-print-the-lexicographically-smallest-string/description/?envType=daily-question&envId=2025-06-06) | 中等 | [栈](../../Leetcode/src/lc2434.java)       | ️栈   | 🌟🌟🌟   |
 | 2025-06-06 | LeetCode          | [1905. 统计子岛屿](https://leetcode.cn/problems/count-sub-islands/description/)                                                                                               | 中等 | [dfs](../../Leetcode/src/lc1905.java)     | ️dfs | 🌟🌟     |
+| 2025-06-06 | LeetCode          | [3170. 删除星号以后字典序最小的字符串](https://leetcode.cn/problems/lexicographically-minimum-string-after-removing-stars/description/?envType=daily-question&envId=2025-06-07)         | 中等 | [单调对列](../../Leetcode/src/lc3170.java)    | 单调对列 | 🌟🌟🌟   |
 
 
 
