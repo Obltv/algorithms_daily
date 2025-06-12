@@ -81,6 +81,8 @@ This project is licensed under the [CC BY-NC 4.0 License](https://creativecommon
 
 [May](./daily/src/May.md)
 
+[June](./daily/src/June.md)
+
 ### 易错点
 
 - 在Codeforces上不要导包。也是在一场div4的第一题被搞破防了
