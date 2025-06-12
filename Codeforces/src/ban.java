@@ -1,17 +1,21 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 // 外部类，可根据需要放入项目中
 public class ban {
 
-    /**
-     * 线性筛法（欧拉筛）实现，支持：
-     * 1. 获取所有质数列表
-     * 2. 判断某个数是否为质数
-     * 3. 获取某个数的最小质因子（Smallest Prime Factor, SPF）
-     */
+
     //质数筛
     class LinearSieve {
+        /**
+         * 线性筛法（欧拉筛）实现，支持：
+         * 1. 获取所有质数列表
+         * 2. 判断某个数是否为质数
+         * 3. 获取某个数的最小质因子（Smallest Prime Factor, SPF）
+         */
+
+
         private final boolean[] isPrime; // isPrime[i] = true 表示 i 是质数
         private final int[] spf;        // spf[i] 存储 i 的最小质因子
         private final List<Integer> primes; // 存储所有质数
@@ -173,6 +177,68 @@ public class ban {
             }
             return res;
         }
+    }
+
+    //最长递增子序列
+    public class LIS {
+
+        /**
+         * 方法一：动态规划 O(n^2)
+         * 返回最长递增子序列的长度
+         */
+        public static int lengthOfLIS_DP(int[] nums) {
+            int n = nums.length;
+            int[] dp = new int[n]; // dp[i] 表示以 nums[i] 结尾的 LIS 长度
+            Arrays.fill(dp, 1); // 初始每个位置至少长度为1
+
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < i; j++) {
+                    if (nums[i] > nums[j]) {
+                        dp[i] = Math.max(dp[i], dp[j] + 1);
+                    }
+                }
+            }
+
+            int res = 0;
+            for (int len : dp) {
+                res = Math.max(res, len);
+            }
+            return res;
+        }
+
+        /**
+         * 方法二：贪心 + 二分 O(nlogn)
+         * 返回最长递增子序列的长度
+         */
+        public static int lengthOfLIS_BinarySearch(int[] nums) {
+            List<Integer> pileTops = new ArrayList<>(); // 模拟每一堆的顶部数字
+            for (int num : nums) {
+                int idx = lowerBound(pileTops, num); // 找到第一个 ≥ num 的位置
+                if (idx == pileTops.size()) {
+                    pileTops.add(num); // 新建一堆
+                } else {
+                    pileTops.set(idx, num); // 替换堆顶
+                }
+            }
+            return pileTops.size();
+        }
+
+        /**
+         * 二分查找：返回第一个 ≥ target 的位置（lower_bound）
+         */
+        private static int lowerBound(List<Integer> list, int target) {
+            int l = 0, r = list.size();
+            while (l < r) {
+                int mid = (l + r) / 2;
+                if (list.get(mid) >= target) {
+                    r = mid;
+                } else {
+                    l = mid + 1;
+                }
+            }
+            return l;
+        }
+
     }
 
 
