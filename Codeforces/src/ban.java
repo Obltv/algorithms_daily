@@ -10,6 +10,7 @@ public class ban {
      * 2. 判断某个数是否为质数
      * 3. 获取某个数的最小质因子（Smallest Prime Factor, SPF）
      */
+    //质数筛
     class LinearSieve {
         private final boolean[] isPrime; // isPrime[i] = true 表示 i 是质数
         private final int[] spf;        // spf[i] 存储 i 的最小质因子
@@ -84,6 +85,7 @@ public class ban {
         }
     }
 
+    //并查集
     class UF {
         private int count;
         private int[] parent;
@@ -124,6 +126,55 @@ public class ban {
         }
 
     }
+
+    //最大公约数
+    class GCD{
+        // 使用辗转相除法（欧几里得算法）
+        public static int gcd(int a, int b) {
+            while (b != 0) {
+                int temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+
+        public static boolean isCoprime(int a, int b) {
+            return gcd(a, b) == 1;
+        }
+    }
+
+    //求平方自由部分squareFree(int x)
+    class NumberTheoryUtils {
+
+        /**
+         * 返回一个整数的“平方自由形式”，即剔除所有出现偶数次的质因子。
+         * 举例：
+         * - 12 = 2^2 * 3 => squareFree(12) = 3
+         * - 18 = 2 * 3^2 => squareFree(18) = 2
+         * - 30 = 2 * 3 * 5 => squareFree(30) = 30
+         *
+         * 该形式常用于分类、哈希或找等价类等场景。
+         */
+        public static int squareFree(int x) {
+            int res = 1;
+            for (int i = 2; i * i <= x; i++) {
+                int cnt = 0;
+                while (x % i == 0) {
+                    x /= i;
+                    cnt++;
+                }
+                if ((cnt & 1) == 1) {
+                    res *= i;
+                }
+            }
+            if (x > 1) {
+                res *= x;
+            }
+            return res;
+        }
+    }
+
 
 
 
