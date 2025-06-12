@@ -82,9 +82,9 @@ This project is licensed under the [CC BY-NC 4.0 License](https://creativecommon
 | 2025-04-30 | LeetCode | [297. 序列化和反序列化二叉树](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/description/)                                                                      | 困难     | [🔗前序](./Leetcode/src/lc297.java)    /  [🔗后序](./Leetcode/src/lc297.java)   /  [🔗层序](./Leetcode/src/lc297.java)                                                 | ️二叉树，递归        | 🌟🌟🌟       |
 | 2025-04-30 | LeetCode | [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked)                                          | 中等     | [🔗数组](./Leetcode/src/lc128.java)                                                                                                                                | ️数组            | 🌟🌟         |
 
-[May](./daily/src/May.md)
+[May](./Month/src/May.md)
 
-[June](./daily/src/June.md)
+[June](./Month/src/June.md)
 
 ### 易错点
 
