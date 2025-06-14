@@ -241,6 +241,30 @@ public class ban {
 
     }
 
+    //快速幂
+    public class FastPower {
+        private final long MOD;
+
+        public FastPower(long mod) {
+            this.MOD = mod;
+        }
+
+        // 快速幂方法：计算 b^e % MOD
+        public long pow(long base, long exp) {
+            long result = 1;
+            base %= MOD;  // 避免 base 太大
+
+            while (exp > 0) {
+                if ((exp & 1) == 1) {
+                    result = result * base % MOD;
+                }
+                base = base * base % MOD;
+                exp >>= 1;
+            }
+
+            return result;
+        }
+    }
 
 
 
