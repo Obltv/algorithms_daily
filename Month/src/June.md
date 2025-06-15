@@ -29,6 +29,7 @@
 | 2025-06-12 | LeetCode每日一题               | [3423. 循环数组中相邻元素的最大差值](https://leetcode.cn/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/description/?envType=daily-question&envId=2025-06-12) | 简单     | [数组](../../Leetcode/src/lc3423.java)                              | 数组                      | 🌟         |
 | 2025-06-13 | LeetCode每日一题               | [2616. 最小化数对的最大差值](https://leetcode.cn/problems/minimize-the-maximum-difference-of-pairs/description/?envType=daily-question&envId=2025-06-13)                             | 中等     | [二分，贪心](../../Leetcode/src/lc2616.java)                           | 二分，贪心                   | 🌟🌟🌟🌟   |
 | 2025-06-13 | LeetCode                   | [115. 不同的子序列](https://leetcode.cn/problems/distinct-subsequences/description/)                                                                                             | 困难     | [dp](../../Leetcode/src/lc115.java)                               | dp                      | 🌟🌟🌟🌟   |
+| 2025-06-14 | LeetCode每日一题               | [2566. 替换一个数字后的最大差值](https://leetcode.cn/problems/maximum-difference-by-remapping-a-digit/description/?envType=daily-question&envId=2025-06-14)                            | 简单     | [贪心](../../Leetcode/src/lc2566.java)                              | 贪心                      | 🌟         |
 
 
 
