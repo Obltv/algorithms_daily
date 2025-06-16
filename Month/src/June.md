@@ -30,7 +30,8 @@
 | 2025-06-13 | LeetCode每日一题               | [2616. 最小化数对的最大差值](https://leetcode.cn/problems/minimize-the-maximum-difference-of-pairs/description/?envType=daily-question&envId=2025-06-13)                             | 中等     | [二分，贪心](../../Leetcode/src/lc2616.java)                           | 二分，贪心                   | 🌟🌟🌟🌟   |
 | 2025-06-13 | LeetCode                   | [115. 不同的子序列](https://leetcode.cn/problems/distinct-subsequences/description/)                                                                                             | 困难     | [dp](../../Leetcode/src/lc115.java)                               | dp                      | 🌟🌟🌟🌟   |
 | 2025-06-14 | LeetCode每日一题               | [2566. 替换一个数字后的最大差值](https://leetcode.cn/problems/maximum-difference-by-remapping-a-digit/description/?envType=daily-question&envId=2025-06-14)                            | 简单     | [贪心](../../Leetcode/src/lc2566.java)                              | 贪心                      | 🌟         |
-
+| 2025-06-15 | LeetCode每日一题               | [1432. 改变一个整数能得到的最大差值](https://leetcode.cn/problems/max-difference-you-can-get-from-changing-an-integer/description/?envType=daily-question&envId=2025-06-15)              | 中等     | [贪心](../../Leetcode/src/lc1432.java)                              | 贪心                      | 🌟🌟🌟     |
+| 2025-06-16 | LeetCode每日一题               | [2016. 增量元素之间的最大差值](https://leetcode.cn/problems/maximum-difference-between-increasing-elements/description/?envType=daily-question&envId=2025-06-16)                      | 简单     | [数组](../../Leetcode/src/lc2016.java)                              | 贪心                      | 🌟🌟       |
 
 
 
