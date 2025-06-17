@@ -180,7 +180,7 @@ public class ban {
     }
 
     //最长递增子序列
-    public class LIS {
+    class LIS {
 
         /**
          * 方法一：动态规划 O(n^2)
@@ -242,7 +242,7 @@ public class ban {
     }
 
     //快速幂
-    public class FastPower {
+    class FastPower {
         private final long MOD;
 
         public FastPower(long mod) {
@@ -263,6 +263,62 @@ public class ban {
             }
 
             return result;
+        }
+    }
+
+    //模运算
+    class Combinatorics {
+        private static final int MOD = 1_000_000_007;
+        private static final int MX = 100_001; // 按需修改，例如1e5、2e5
+
+        private static final long[] F = new long[MX];       // F[i] = i!
+        private static final long[] INV_F = new long[MX];   // INV_F[i] = i!^-1 mod MOD
+
+        static {
+            // 初始化阶乘数组
+            F[0] = 1;
+            for (int i = 1; i < MX; i++) {
+                F[i] = F[i - 1] * i % MOD;
+            }
+
+            // 初始化阶乘逆元数组，先算出最大值的逆元
+            INV_F[MX - 1] = pow(F[MX - 1], MOD - 2);
+            for (int i = MX - 1; i > 0; i--) {
+                INV_F[i - 1] = INV_F[i] * i % MOD;
+            }
+        }
+
+        // 快速幂计算 x^n % MOD
+        private static long pow(long x, int n) {
+            long res = 1;
+            while (n > 0) {
+                if ((n & 1) == 1) {
+                    res = res * x % MOD;
+                }
+                x = x * x % MOD;
+                n >>= 1;
+            }
+            return res;
+        }
+
+        /**
+         * 计算组合数 C(n, m) = n! / (m! * (n-m)!) % MOD
+         * 如果 m < 0 或 m > n，则返回 0
+         */
+        public static long comb(int n, int m) {
+            if (m < 0 || m > n) return 0;
+            return F[n] * INV_F[m] % MOD * INV_F[n - m] % MOD;
+        }
+
+        /**
+         * 可选扩展功能：阶乘查询
+         */
+        public static long fact(int n) {
+            return F[n];
+        }
+
+        public static long invFact(int n) {
+            return INV_F[n];
         }
     }
 
