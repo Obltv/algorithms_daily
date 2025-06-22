@@ -42,6 +42,9 @@
 | 2025-06-20 | LeetCode每日一题               | [3443. K 次修改后的最大曼哈顿距离](https://leetcode.cn/problems/maximum-manhattan-distance-after-k-changes/description/?envType=daily-question&envId=2025-06-20)                         | 中等     | [贪心](../../Leetcode/src/lc3443.java)                                  | 贪心                               | 🌟🌟🌟     |
 | 2025-06-20 | LeetCode                   | [139. 单词拆分](https://leetcode.cn/problems/word-break/description/)                                                                                                            | 中等     | [dp](../../Leetcode/src/lc139.java)                                   | dp                               | 🌟🌟🌟🌟   |
 | 2025-06-20 | LeetCode                   | [140. 单词拆分 II](https://leetcode.cn/problems/word-break-ii/description/)                                                                                                      | 困难     | [dp](../../Leetcode/src/lc140.java)                                   | dp                               | 🌟🌟🌟🌟   |
+| 2025-06-21 | LeetCode每日一题               | [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/?envType=daily-question&envId=2025-06-21)                               | 中等     | [贪心](../../Leetcode/src/lc3085.java)                                  | 贪心                               | 🌟🌟🌟     |
+| 2025-06-21 | LeetCode第159场双周赛           | [3588. 找到最大三角形面积](https://leetcode.cn/problems/find-maximum-area-of-a-triangle/description/)                                                                                 | 中等     | [暴力](../../Leetcode/src/lc3588.java)                                  | 暴力                               | 🌟🌟🌟     |
+
 
 
 
