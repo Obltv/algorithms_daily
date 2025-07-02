@@ -86,6 +86,8 @@ This project is licensed under the [CC BY-NC 4.0 License](https://creativecommon
 
 [June](./Month/src/June.md)
 
+[July](./Month/src/July.md)
+
 ### 易错点
 
 - 在Codeforces上不要导包。也是在一场div4的第一题被搞破防了
@@ -144,6 +146,8 @@ public static void main(String[] args) {
 ```
 
 # 八股
+
+[更多文章在我的个人网站](https://obltv.website/)
 
 ## Java基础
 
