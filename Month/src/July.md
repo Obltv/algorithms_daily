@@ -22,7 +22,8 @@
 | 2025-07-13 | LeetCode                   | [100679. 最小化连通分量的最大成本](https://leetcode.cn/problems/minimize-maximum-component-cost/description/)                                                          | Medium | [题解](../../Leetcode/src/lc100679.java)           | 暂无                               | 🌟         |
 | 2025-07-13 | LeetCode                   | [100721. 用特殊操作处理字符串 I](https://leetcode.cn/problems/process-string-with-special-operations-i/description/)                                                 | Medium | [题解](../../Leetcode/src/lc100721.java)           | 暂无                               | 🌟         |
 | 2025-07-13 | LeetCode每日一题               | [2410. 运动员和训练师的最大匹配数](https://leetcode.cn/problems/maximum-matching-of-players-with-trainers/description/)                                                 | Medium | [题解](../../Leetcode/src/lc2410.java)             | 贪心,数组,双指针,排序                     | 🌟🌟🌟🌟🌟 |
-
+| 2025-07-14 | LeetCode                   | [3614. 用特殊操作处理字符串 II](https://leetcode.cn/problems/process-string-with-special-operations-ii/description/)                                                 | Hard   | [题解](../../Leetcode/src/lc3614.java)             | 暂无                               | 🌟         |
+| 2025-07-14 | LeetCode每日一题               | [1290. 二进制链表转整数](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/description/)                                              | Easy   | [题解](../../Leetcode/src/lc1290.java)             | 链表,数学                            | 🌟🌟🌟🌟🌟 |
 
 
 

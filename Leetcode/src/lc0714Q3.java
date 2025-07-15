@@ -29,6 +29,7 @@ public class lc0714Q3 {
             }else{
                 return res.charAt((int) k);
             }
+
         }
     }
 }
