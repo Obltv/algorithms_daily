@@ -24,6 +24,7 @@
 | 2025-07-13 | LeetCode每日一题               | [2410. 运动员和训练师的最大匹配数](https://leetcode.cn/problems/maximum-matching-of-players-with-trainers/description/)                                                 | Medium | [题解](../../Leetcode/src/lc2410.java)             | 贪心,数组,双指针,排序                     | 🌟🌟🌟🌟🌟 |
 | 2025-07-14 | LeetCode                   | [3614. 用特殊操作处理字符串 II](https://leetcode.cn/problems/process-string-with-special-operations-ii/description/)                                                 | Hard   | [题解](../../Leetcode/src/lc3614.java)             | 暂无                               | 🌟         |
 | 2025-07-14 | LeetCode每日一题               | [1290. 二进制链表转整数](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/description/)                                              | Easy   | [题解](../../Leetcode/src/lc1290.java)             | 链表,数学                            | 🌟🌟🌟🌟🌟 |
-
+| 2025-07-15 | LeetCode                   | [312. 戳气球](https://leetcode.cn/problems/burst-balloons/description/)                                                                                       | Hard   | [题解](../../Leetcode/src/lc312.java)              | 数组,动态规划                          | 🌟🌟🌟     |
+| 2025-07-15 | LeetCode每日一题               | [3136. 有效单词](https://leetcode.cn/problems/valid-word/description/)                                                                                         | Easy   | [题解](../../Leetcode/src/lc3136.java)             | 字符串                              | 🌟🌟🌟🌟🌟 |
 
 
